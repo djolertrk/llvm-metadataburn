@@ -59,7 +59,7 @@ During patch reviews on the LLVM Phabricator [3], reviewers very frequently ask 
     !15 = !DILocation(line: 4, column: 1, scope: !6)
     !16 = !DILocation(line: 5, column: 1, scope: !6)
 
-This test case should be intereted in checking if the ADCE Transformation preserves (more preciselly "salvages") debug info for var "1", so having all these !DILocation isn't neccessery, so we can attach only one !DILocation onto all the IR instructions from the test as follows:
+This test case should be interested in checking if the ADCE Transformation preserves (more precisely "salvages") debug info for var "1", so having all these !DILocation isn't necessary, so we can attach only one !DILocation onto all the IR instructions from the test as follows:
 
     $ git diff
     ...
